@@ -6,7 +6,7 @@ If you want to add/update something create new branch and raise PR against maste
 
 <p align="center">
 <a href="#">
-<img src="src/assets/download.jpg" width="200px" alt="agora"/>
+<img src="sample.jpg" width="200px" alt="agora"/>
 </a>
 </p>
 
