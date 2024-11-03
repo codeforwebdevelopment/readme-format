@@ -1,31 +1,72 @@
-### Understanding Monopoly Stocks in India
+Here are some tricky JavaScript coding questions to challenge your skills:
 
-Monopoly stocks refer to shares of companies that dominate their respective markets with little to no competition. In India, certain sectors have clear leaders that can be categorized as monopoly stocks, providing investors with unique opportunities and risks.
+1. **Variable Scope**:
+   ```javascript
+   var x = 1;
+   function foo() {
+       var x = 2;
+       function bar() {
+           x++;
+           console.log(x);
+       }
+       bar();
+   }
+   foo();
+   ```
+   What will be logged to the console?
 
-#### Key Characteristics of Monopoly Stocks
+2. **Closure and Loop**:
+   ```javascript
+   for (var i = 0; i < 5; i++) {
+       setTimeout(function() {
+           console.log(i);
+       }, 100);
+   }
+   ```
+   What will be logged to the console?
 
-1. **Market Dominance**: These companies often have a significant share of the market, which allows them to influence prices and maintain higher profit margins.
+3. **Object and Array Comparison**:
+   ```javascript
+   const obj1 = { name: 'Alice' };
+   const obj2 = { name: 'Alice' };
+   const arr1 = [1, 2, 3];
+   const arr2 = [1, 2, 3];
+   console.log(obj1 === obj2);
+   console.log(arr1 === arr2);
+   ```
+   What will be the output and why?
 
-2. **Barriers to Entry**: High barriers such as regulatory challenges, capital requirements, or strong brand loyalty prevent new competitors from entering the market.
+4. **`this` Keyword**:
+   ```javascript
+   const obj = {
+       value: 10,
+       increment: function() {
+           setTimeout(function() {
+               this.value++;
+               console.log(this.value);
+           }, 1000);
+       }
+   };
+   obj.increment();
+   ```
+   What will be logged to the console after one second?
 
-3. **Consistent Revenue**: Due to their dominance, these companies typically exhibit stable and predictable revenue streams, making them attractive for long-term investors.
+5. **Function Hoisting**:
+   ```javascript
+   console.log(foo()); // What will this log?
+   var foo = function() {
+       return 'Hello, World!';
+   };
+   ```
 
-#### Examples in India
+6. **Promise and Async/Await**:
+   ```javascript
+   async function example() {
+       return 'First';
+   }
+   example().then(console.log);
+   console.log('Second');
+   ```
+   In what order will the outputs appear in the console?
 
-1. **Reliance Industries Limited (RIL)**: A giant in petrochemicals, refining, and telecommunications, RIL’s scale and diversification help it maintain a dominant position in several sectors.
-
-2. **Hindustan Unilever Limited (HUL)**: As a leader in the fast-moving consumer goods (FMCG) sector, HUL benefits from strong brand recognition and widespread distribution.
-
-3. **Tata Consultancy Services (TCS)**: A major player in IT services, TCS has a competitive edge through its extensive client base and a reputation for quality.
-
-4. **Infosys**: Another heavyweight in IT services, Infosys has established itself as a reliable partner for global businesses, making it difficult for smaller firms to compete.
-
-#### Investment Considerations
-
-- **Growth Potential**: While monopoly stocks tend to be stable, investors should evaluate growth potential and market trends.
-- **Regulatory Risks**: Changes in government policies or regulations can impact monopolies, making it essential to stay informed.
-- **Valuation Metrics**: High market dominance often leads to premium valuations, so investors should consider price-to-earnings ratios and other metrics carefully.
-
-#### Conclusion
-
-Monopoly stocks in India present a compelling case for investors seeking stability and potential growth. While they offer numerous advantages, it's crucial to conduct thorough research and consider the broader economic and regulatory environment before investing.
+Feel free to dive deeper into any of these questions or ask for clarifications!
